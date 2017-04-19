@@ -1,0 +1,47 @@
+test x = even x 
+
+add x y = x+y
+succ1 = add 1 
+
+--type dayOff = friday  wrong 
+
+data Fruit = Banana | Kiwiw | Apple 
+
+isYellow Banana = True 
+
+--type Point = (Int,Int) 
+getX (a,b)= a 
+
+data Point = Pt (Int,Int)
+getY pt(a,b)= b 
+
+
+small [x]=x
+small (x:xs)  = smallH x xs
+smallH a [] = a
+smallH a (x:xs) | a<x = smallH a xs 
+				| otherwise = smallH x xs
+
+double x = map (*2) x
+
+
+--mult [] = 1
+mult (x:xs) = foldr (*) 1 (x:xs) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
